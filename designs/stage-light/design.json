@@ -1,0 +1,150 @@
+{
+  "id": "stage-light",
+  "version": 4,
+  "type": "design",
+  "compatibility": {
+    "supersedes": [],
+    "retired_entrypoints": true
+  },
+  "plan_template": "ANIMATION_PLAN.template.md",
+  "brief": {
+    "required": [
+      "核心表达",
+      "主体/次主体",
+      "禁止项",
+      "错相",
+      "运动语言",
+      "物理",
+      "光",
+      "节拍与声音",
+      "验收标准",
+      "参考机制"
+    ],
+    "optional": []
+  },
+  "subjects": {
+    "A": {
+      "primary": "第2层动态图解或第4层文字",
+      "secondary": "角色反应与第3层指示"
+    },
+    "B": {
+      "primary": "第2层媒体",
+      "secondary": "第4层B文字组与第3层指示"
+    }
+  },
+  "stages": {
+    "plan": [
+      ".studio/spec/visual-design.md",
+      ".studio/designs/stage-light/stages/plan.md"
+    ],
+    "draft": [
+      ".studio/spec/visual-design.md",
+      ".studio/spec/hyperframes.md",
+      ".studio/designs/stage-light/stages/draft.md"
+    ],
+    "script": [
+      ".studio/designs/stage-light/stages/script.md"
+    ],
+    "research": [
+      ".studio/designs/stage-light/stages/research.md"
+    ],
+    "export": [
+      ".studio/designs/stage-light/stages/export.md"
+    ]
+  },
+  "thresholds": {
+    "event_gap_seconds": 2,
+    "still_seconds": 0.6,
+    "pixel_mean_delta": 0.5
+  },
+  "critic_checks": [
+    "主体与次级响应",
+    "错相与交接",
+    "阅读保护",
+    "静止区间",
+    "视觉延续",
+    "声音未验证范围"
+  ],
+  "defaults": {
+    "captions": {
+      "enabled": true
+    },
+    "sfx": {
+      "enabled": true
+    },
+    "bgm": {
+      "enabled": false
+    },
+    "cover": {
+      "enabled": true
+    }
+  },
+  "fields": [
+    "captions.enabled",
+    "sfx.enabled",
+    "sfx.policy",
+    "bgm.enabled",
+    "bgm.policy",
+    "cover.enabled",
+    "cover.template",
+    "cover.theme",
+    "cover.background",
+    "voice.ref",
+    "voice.duration_factor",
+    "ratio",
+    "width",
+    "height",
+    "fps",
+    "seed",
+    "cover.width",
+    "cover.height",
+    "cover.font",
+    "cover.logo",
+    "cover.background_image",
+    "cover.font_size",
+    "cover.color",
+    "cover.background_color"
+  ],
+  "assets": {
+    "directory": "assets"
+  },
+  "references": [
+    "stage-full/stage-rig",
+    "stage-full/stage-motion"
+  ],
+  "runtime": {
+    "gsap": "^3.14",
+    "plugins": [
+      "MotionPathPlugin"
+    ]
+  },
+  "exemptions": [],
+  "settings_defaults": {
+    "direction_approval": true,
+    "critic.provider": "off",
+    "critic.model": "",
+    "critic.max_rounds": 1
+  },
+  "capabilities": {
+    "layers": {
+      "required": [
+        "background",
+        "stage",
+        "overlay",
+        "text"
+      ],
+      "optional": []
+    },
+    "rolls": true,
+    "bindings": {
+      "theme": "optional",
+      "background": "optional",
+      "motion": "optional"
+    },
+    "checks": [
+      "director",
+      "reference-count"
+    ],
+    "research_template": "RESEARCH.template.md"
+  }
+}

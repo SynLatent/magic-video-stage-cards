@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "stage-motion",
+  "version": 1,
+  "kind": "module",
+  "entry": "stage-motion.js",
+  "description": "stage-full card motion pack for the tool-level HarnessMotion verbs (runtime/motion.js): paper pieces stand up and fold down on a bottom hinge, move along arcs, settle with a hinge wobble, hand over by folding; plus the card-only sortTo verb. Load after runtime/motion.js.",
+  "rights": "Apache-2.0"
+}

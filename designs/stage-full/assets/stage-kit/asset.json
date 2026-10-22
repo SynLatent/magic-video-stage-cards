@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "stage-kit",
+  "version": 1,
+  "kind": "module",
+  "entry": "stage-kit.js",
+  "dependencies": [
+    "blocks/slot-text.js",
+    "blocks/prop-stand.js",
+    "blocks/inset-broll.js",
+    "blocks/rig-rebuild.js",
+    "blocks/stack-explode.js",
+    "blocks/disc-scene.js",
+    "blocks/spot-sweep.js",
+    "blocks/spot-split.js",
+    "blocks/tray-sort.js",
+    "blocks/sign-plate.js",
+    "blocks/prop-states.js"
+  ],
+  "description": "Parameterised stage blocks for the stage-full track tier: reading-window text slots, prop stand-up on the rig hinge, paper-framed B-roll inset, fold-and-rebuild relocation, exploded layer stack, and the rotating picture-disc scenery change; plus focus-light sweep and split, tray sorting with causal leaders, and text written on a paper sign; plus prop.states, a data-described multi-part prop with named states for each Work's own objects.",
+  "rights": "Apache-2.0"
+}
